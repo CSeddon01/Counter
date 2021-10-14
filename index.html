@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>No trouble tipping</title>
+</head>
+<body>
+    <main>
+        <h1>ProTip Tipping Thing</h1>
+
+        <section>
+           
+            <div class="bill">
+                <label for="yourBill">Bill</label>
+                <input type="number" placeholder="Total Amount" id="yourBill"/>
+            </div>
+            <div class="space-between">
+                <label for="tipInput">Select tip</label>
+                <span id="tipPercent">0%</span>
+            </div>
+                <input type="range" value="0" id="tipInput" class="range" />
+            <div class="space-between">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr />
+            <div class="space-between">
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+            
+        </section>
+
+        <section>
+          <div>
+            <div class="space-between">
+                <label for="splitInput">Amount Due </label>
+                <span id="splitValue">Per 1 person</span>
+            </div>
+            <input type="range" min="1" max="10" value="1" id="splitInput" class="range" />
+          </div>
+            <div class="space-between">
+                <span>Bill each</span>
+                <span id="billEach">Bill Each</span>
+            </div>
+            <div class="space-between">
+                <span>Tip each</span>
+                <span id="tipEach">Tip Each</span>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
